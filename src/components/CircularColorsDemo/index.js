@@ -1,2 +1,7 @@
-export * from './CircularColorsDemo';
-export { default } from './CircularColorsDemo';
+"use client";
+
+import dynamic from "next/dynamic";
+
+export const CircularColorsDemo = dynamic(() =>
+  import("../CircularColorsDemo/CircularColorsDemo")
+);
